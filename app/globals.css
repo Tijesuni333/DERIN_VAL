@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #E0F2F7;
+  --color-foreground: #4A2C2C;
+  
+  --color-primary: #D23369;
+  --color-primary-foreground: #FFFFFF;
+  
+  --color-secondary: #F8E1E7;
+  --color-secondary-foreground: #4A2C2C;
+  
+  --color-accent: #D4AF37;
+  --color-accent-foreground: #FFFFFF;
+  
+  --color-muted: #B3E5FC;
+  --color-muted-foreground: #4A2C2C;
+
+  --color-card: #B3E5FC;
+  --color-card-foreground: #4A2C2C;
+
+  --color-border: #D4AF37;
+  
+  --font-script: var(--font-script), cursive;
+  --font-sans: var(--font-sans), sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-script);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
