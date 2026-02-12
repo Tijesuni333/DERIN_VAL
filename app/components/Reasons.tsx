@@ -59,10 +59,10 @@ function FlipCard({ reason, index }: { reason: string; index: number }) {
 
         {/* Back */}
         <div 
-          className="absolute inset-0 backface-hidden rounded-2xl bg-white flex items-center justify-center p-6 shadow-xl border-2 border-primary/20"
+          className="absolute inset-0 backface-hidden rounded-2xl bg-white flex items-center justify-center p-2 md:p-6 shadow-xl border-2 border-primary/20"
           style={{ transform: "rotateY(180deg)" }}
         >
-          <p className="text-lg md:text-xl font-playfair text-foreground leading-tight text-center">
+          <p className="text-base md:text-xl font-playfair text-foreground leading-tight text-center">
             {reason}
           </p>
         </div>
