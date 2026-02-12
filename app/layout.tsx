@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Dancing_Script, Montserrat } from "next/font/google";
+import { Dancing_Script, Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const dancingScript = Dancing_Script({
@@ -9,6 +9,11 @@ const dancingScript = Dancing_Script({
 
 const montserrat = Montserrat({
   variable: "--font-sans",
+  subsets: ["latin"],
+});
+
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
 });
 
@@ -25,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dancingScript.variable} ${montserrat.variable} antialiased bg-background text-foreground`}
+        className={`${dancingScript.variable} ${montserrat.variable} ${playfairDisplay.variable} antialiased bg-background text-foreground`}
       >
         {children}
       </body>

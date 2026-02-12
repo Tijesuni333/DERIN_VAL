@@ -23,6 +23,7 @@
   
   --font-script: var(--font-script), cursive;
   --font-sans: var(--font-sans), sans-serif;
+  --font-playfair: var(--font-playfair), serif;
 }
 
 body {

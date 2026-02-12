@@ -39,8 +39,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# Exclude large multimedia files
-*.mp3
-*.jpeg
-*.gif

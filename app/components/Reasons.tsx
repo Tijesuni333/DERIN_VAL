@@ -62,7 +62,7 @@ function FlipCard({ reason, index }: { reason: string; index: number }) {
           className="absolute inset-0 backface-hidden rounded-2xl bg-white flex items-center justify-center p-6 shadow-xl border-2 border-primary/20"
           style={{ transform: "rotateY(180deg)" }}
         >
-          <p className="text-lg md:text-xl font-script text-foreground leading-tight">
+          <p className="text-lg md:text-xl font-playfair text-foreground leading-tight text-center">
             {reason}
           </p>
         </div>
